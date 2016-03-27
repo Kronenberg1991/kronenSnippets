@@ -57,11 +57,10 @@ function addMessageToTheTwitter() {
    function(results){ console.log(results); } );
 }
 
-
 document.getElementById('add-message').addEventListener('click', addMessageToTheTwitter);
 
-
 document.getElementById('tumblr-follow').addEventListener('click', tumblrFollow);
+
 document.getElementById('tumblr-unfollow').addEventListener('click', tumblrUfollow);
 
 document.getElementById('instagram-likes').addEventListener('click', instaLikes);
