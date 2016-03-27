@@ -1,4 +1,5 @@
-
+// Here is i am just execute code from my Content Scripts!
+// very dirty
 
 function typeMessage() {
     chrome.tabs.executeScript( null, {code: "START_TYPING()"},
