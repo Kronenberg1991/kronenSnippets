@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "Follow People on Twitter",
+  "description": "Following people on twitter automatically",
+  "version": "1.0",
+  "author": "Michael Konchakovskyy",
+  "permissions": ["storage", "https://twitter.com/*", "unlimitedStorage","https://tumblr.com/*", ""],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+{
+"matches": [ "http://*/*","https://*/*"],
+"js": ["jquery.min.js","jquery-ui.custom.min.js","raphael-min.js","raphael.sketchpad.js","bililiteRange.js","jquery.simulate.js","jquery.simulate.ext.js","jquery.simulate.drag-n-drop.js","jquery.simulate.key-sequence.js","jquery.simulate.key-combo.js","jquery.typetype.js","alert.js"]
+}
+],
+"web_accessible_resources": [
+"popup.html"
+],
+
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+   // "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
+
+
+
+
